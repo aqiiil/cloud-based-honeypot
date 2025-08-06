@@ -1,0 +1,6 @@
+// Query to find the most attempted usernames:
+
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts = count() by Account
+| top 10 by Attempts

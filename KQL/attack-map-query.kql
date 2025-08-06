@@ -1,0 +1,8 @@
+// Query used in the attack map workbook:
+
+let GeoIPDB = _GetWatchlist("geoip");
+SecurityEvent
+| where EventID == 4625
+| summarize Count = count() by IpAddress
+| evaluate ipv4_lookup(GeoIPDB, IpAddress, network)
+| project IpAddress, location_lat = latitude, location_long = longitude, Count

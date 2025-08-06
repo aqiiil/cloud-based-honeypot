@@ -1,0 +1,8 @@
+// Query to enrich IP data using the GeoIP watchlist:
+
+let GeoIPDB_FULL = _GetWatchlist("geoip");
+let WindowsEvents = SecurityEvent
+| where EventID == 4625
+| project TimeGenerated, IpAddress, Account, Computer
+| evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network);
+WindowsEvents

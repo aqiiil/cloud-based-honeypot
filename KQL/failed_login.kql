@@ -1,0 +1,6 @@
+// Basic query to detect failed login attempts (Event ID 4625):
+
+SecurityEvent
+| where EventID == 4625
+| project TimeGenerated, Account, IpAddress, Computer, FailureReason
+| sort by TimeGenerated desc

@@ -1,0 +1,6 @@
+// Summary view of attacker IPs:
+
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts = count() by IpAddress
+| sort by Attempts desc

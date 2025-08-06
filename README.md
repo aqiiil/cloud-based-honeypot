@@ -38,11 +38,12 @@ A Windows Virtual Machine (VM) was deployed on Microsoft Azure with exposed Remo
 
 Visual references and screenshots can be found in the [`/Screenshots`](./Screenshots) directory. These include:
 
-- [KQL log query outputs](./Screenshots/29.png)
-- [Geo-IP visualizations](./Screenshots/44.png)
+- [Setting Up Windows Virtual Machine on Azure with Public RDP Access](./Screenshots/4.png)
+- [Adding Inbound Security Rule to Allow All Traffic in Network Security Group (NSG)](./Screenshots/6.png)
 - [Importing Geo-IP Data as a Sentinel Watchlist for Enrichment](./Screenshots/31.png)
 - [Connecting VM to Sentinel via Windows Security Events (AMA) Connector](./Screenshots/15.png)
-
+- [KQL log query outputs](./Screenshots/29.png)
+- [Geo-IP visualizations](./Screenshots/44.png)
 
 ## Future Enhancements
 

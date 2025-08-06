@@ -38,7 +38,7 @@ A Windows Virtual Machine (VM) was deployed on Microsoft Azure with exposed Remo
 
 Visual references and screenshots can be found in the [`/Screenshots`](./Screenshots) directory. These include:
 
-- KQL log query outputs
+- [KQL log query outputs](./Screenshots/29.png)
 - Workbook dashboards
 - Geo-IP visualizations
 - Alert configuration examples

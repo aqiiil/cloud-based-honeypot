@@ -52,6 +52,4 @@ Visual references and screenshots can be found in the [`/Screenshots`](./Screens
 - Integrate third-party threat intelligence feeds
 - Set up email or Teams-based alerting for critical events
 
-## License
 
-This project is licensed under the [MIT License](./LICENSE).
